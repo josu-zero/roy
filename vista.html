@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icon-roy.ico">
+        <title>Roy el perrito</title>
+        <style>
+            body {
+                font-family: "Lucida Console", "Courier New", monospace;
+                background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+                padding: 0;
+                margin: 0;
+            }
+    
+            header {
+                text-align: center;
+            }
+    
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+    
+            li {
+                float: left;
+            }
+    
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+    
+            li a:hover:not(.active) {
+                background-color: #111;
+            }
+    
+            .active {
+                background-color: #04AA6D;
+            }
+    
+            h1 {
+                background-color: black;
+                padding: 10px;
+                margin: 0;
+                color: #92a4ff;
+            }
+    
+            div.gallery {
+                margin: 5px;
+                border: 1px solid #ccc;
+                float: left;
+                width: 33vw;
+            }
+    
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+    
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+    
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+    
+            .centrado {
+                display: flex;
+                justify-content: center;
+            }
+            .footer {
+                background-color: #333;
+                color: #FFF;
+                padding: 10px;
+                text-align: center;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Roy, el perro</h1>
+            <nav>
+                <section>
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="preferencias.html">Preferencias</a></li>
+                        <li><a href="vista.html">Vista</a></li>
+                        <li><a href="sesion.html">Sesion</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+        <div class="centrado">
+            <video class="centrado" src="/assets/rvsc.mp4" height="450px" width="600px" autoplay muted controls></video>
+        </div>
+        <section class="centrado">
+            <div>
+                <a href="/assets/loy.jpeg" target="_blank"><img src="/assets/loy.jpeg" alt="" width="280px" height="320px"></a>
+            </div>
+            <div>
+                <a href="/assets/navidad.jpeg" target="_blank"><img src="/assets/navidad.jpeg" alt="" width="300px" height="320px"></a>
+            </div>
+            <div>
+                <a href="/assets/roypapa.jpeg" target="_blank"><img src="/assets/roypapa.jpeg" alt="" width="300px" height="320px"></a>
+            </div>
+            <div>
+                <a href="/assets/papa.jpeg" target="_blank"><img src="/assets/papa.jpeg" alt="" width="280px" height="320px"></a>
+            </div>
+            <div>
+                <a href="/assets/juntos.jpeg" target="_blank"><img src="/assets/juntos.jpeg" alt="" width="340px" height="320px"></a>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Derechos de autor &copy; 2024</p>
+        </footer>
+    </body>
+</html>
